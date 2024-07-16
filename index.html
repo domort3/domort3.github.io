@@ -15,20 +15,48 @@
             transition: max-height 0.5s ease-out;
         }
         .project-details.show {
-            max-height: 500px; /* Adjust this value as needed */
+            max-height: 500px;
+        }
+        @media (max-width: 767px) {
+            .project-card {
+                margin-bottom: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation and other sections remain the same -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <main class="container mt-5">
-        <!-- About section remains the same -->
+    <main class="container mt-4">
+        <section id="about" class="mb-5">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself here.</p>
+        </section>
 
         <section id="projects" class="mb-5">
             <h2>My Projects</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card project-card">
                         <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 1">
                         <div class="card-body">
@@ -57,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card project-card">
                         <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 2">
                         <div class="card-body">
@@ -86,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card project-card">
                         <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Project 3">
                         <div class="card-body">
@@ -118,10 +146,17 @@
             </div>
         </section>
 
-        <!-- Contact section remains the same -->
+        <section id="contact" class="mb-5">
+            <h2>Contact Me</h2>
+            <p>You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </section>
     </main>
 
-    <!-- Footer remains the same -->
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
