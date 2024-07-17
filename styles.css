@@ -1,0 +1,213 @@
+:root {
+    --bg-primary: #0f1116;
+    --bg-secondary: #1a1c23;
+    --text-primary: #e6e6e6;
+    --text-secondary: #a0a0a0;
+    --accent-color: #5658dd;
+    --accent-hover: #6c6ee0;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header styles */
+header {
+    background-image: linear-gradient(rgba(15, 17, 22, 0.7), rgba(15, 17, 22, 0.7)), url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-primary);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    color: var(--text-secondary);
+}
+
+/* Navigation styles */
+nav {
+    background-color: var(--bg-secondary);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+/* Project grid styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card .content {
+    padding: 1.5rem;
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.project-card p {
+    color: var(--text-secondary);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+/* Internship section styles */
+.internship-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.internship-details {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 2rem;
+}
+
+.internship-pdf {
+    flex: 0 0 auto;
+    margin-top: 1rem;
+}
+
+.pdf-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .internship-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .internship-details {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
