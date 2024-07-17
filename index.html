@@ -36,23 +36,14 @@
             <div class="internship-container">
                 <div class="internship-details">
                     <h3>Company Name</h3>
-                    <p><strong>Position:</strong> Your Position</p>
-                    <p><strong>Duration:</strong> Start Date - End Date</p>
-                    <p><strong>Key Responsibilities:</strong></p>
-                    <ul>
-                        <li>Responsibility 1</li>
-                        <li>Responsibility 2</li>
-                        <li>Responsibility 3</li>
-                    </ul>
-                    <p><strong>Achievements:</strong></p>
-                    <ul>
-                        <li>Achievement 1</li>
-                        <li>Achievement 2</li>
-                    </ul>
+                    <p><strong>Position:</strong> Intern within Digital Human Dev Team</p>
+                    <p><strong>Duration:</strong> 05/06/2024 - 07/05/2024</p>
+                    <p><strong>Main Tasks:</strong></p>
+                    
                 </div>
                 <div class="internship-pdf">
                     <a href="path/to/your/internship_details.pdf" class="pdf-button" target="_blank">
-                        Download Internship Details (PDF)
+                        See Final Report (PDF)
                     </a>
                 </div>
             </div>
@@ -65,7 +56,16 @@
                     <img src="https://via.placeholder.com/300x200" alt="Project 1">
                     <div class="content">
                         <h3>Project 1</h3>
-                        <p>A web dev project I did</p>
+                        <p>Short description of Project 1.</p>
+                        <div class="project-details">
+                            <p>Expanded details about Project 1. This can include technologies used, challenges faced, and solutions implemented.</p>
+                            <ul>
+                                <li>Key feature 1</li>
+                                <li>Key feature 2</li>
+                                <li>Key feature 3</li>
+                            </ul>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -73,6 +73,15 @@
                     <div class="content">
                         <h3>Project 2</h3>
                         <p>Short description of Project 2.</p>
+                        <div class="project-details">
+                            <p>Expanded details about Project 2. Discuss the project goals, your role, and the impact of the project.</p>
+                            <ul>
+                                <li>Achievement 1</li>
+                                <li>Achievement 2</li>
+                                <li>Achievement 3</li>
+                            </ul>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -80,6 +89,15 @@
                     <div class="content">
                         <h3>Project 3</h3>
                         <p>Short description of Project 3.</p>
+                        <div class="project-details">
+                            <p>Expanded details about Project 3. You can include information about the development process, tools used, and lessons learned.</p>
+                            <ul>
+                                <li>Technical highlight 1</li>
+                                <li>Technical highlight 2</li>
+                                <li>Technical highlight 3</li>
+                            </ul>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,5 +116,13 @@
     <footer>
         <p>Portfolio</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('expanded');
+            });
+        });
+    </script>
 </body>
 </html>
