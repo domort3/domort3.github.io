@@ -9,41 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>Your Name</h3>
-        </div>
-        <ul class="list-unstyled components">
-            <li>
-                <a href="#home">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#about">
-                    <i class="fas fa-user"></i>
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#internship">
-                    <i class="fas fa-briefcase"></i>
-                    <span>Internship</span>
-                </a>
-            </li>
-            <li>
-                <a href="#projects">
-                    <i class="fas fa-project-diagram"></i>
-                    <span>Projects</span>
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a>
-            </li>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#internship"><i class="fas fa-briefcase"></i> Internship</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
     </nav>
 
@@ -148,6 +120,37 @@
     </footer>
 
     <script>
+        // Navbar hide on scroll
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").classList.remove("hidden");
+            } else {
+                document.getElementById("navbar").classList.add("hidden");
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    
+        // Smooth section reveal
+        const sections = document.querySelectorAll('section');
+        const revealSection = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+        const sectionObserver = new IntersectionObserver(revealSection, {
+            root: null,
+            threshold: 0.15,
+        });
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+    
+        // Project card expansion
         document.querySelectorAll('.project-card').forEach(card => {
             card.addEventListener('click', () => {
                 card.classList.toggle('expanded');
