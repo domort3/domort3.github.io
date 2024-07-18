@@ -216,27 +216,13 @@ footer {
     font-weight: 300;
 }
 
-/* Internship section styles */
-.internship-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+.internship-summary {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.internship-details {
-    flex: 1;
-    min-width: 300px;
-    margin-right: 2rem;
-}
-
-.internship-pdf {
-    flex: 0 0 auto;
-    margin-top: 1rem;
-}
-
-.pdf-button {
+.button {
     display: inline-block;
     background-color: var(--accent-color);
     color: var(--text-primary);
@@ -245,9 +231,10 @@ footer {
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-weight: 600;
+    margin-top: 1rem;
 }
 
-.pdf-button:hover {
+.button:hover {
     background-color: var(--accent-hover);
     transform: translateY(-2px);
 }
@@ -280,3 +267,106 @@ footer {
         margin-bottom: 1rem;
     }
 }
+/* Skillset styles */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.skill-category h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    list-style-type: none;
+}
+
+.skill-category ul li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+/* Skillset styles */
+.skill-category ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.skill-category ul li i {
+    margin-right: 0.5rem;
+    width: 20px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+/* Specific icon colors */
+.skill-category ul li i.fa-html5 { color: #E34F26; }
+.skill-category ul li i.fa-cuttlefish { color: #68217A; }
+.skill-category ul li i.fa-python { color: #3776AB; }
+.skill-category ul li i.fa-js-square { color: #F7DF1E; }
+.skill-category ul li i.fa-android { color: #3DDC84; }
+
+/* Experience styles */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.experience-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.experience-item .company {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.experience-item .date {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.experience-item ul li {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-category {
+        width: 100%;
+        max-width: none;
+    }
+}
+
