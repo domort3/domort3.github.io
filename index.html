@@ -30,11 +30,18 @@
     </nav>
 
     <header id="home">
-        <div id="particles-js"></div>
-        <h1>Domingo Ortega III</h1>
-        <p><span id="typed"></span></p>
+        <div class="header-content">
+            <div class="header-text">
+                <p class="header-greeting">Hi, my name is</p>
+                <h1>Domingo Ortega III</h1>
+                <p class="header-profession"><span id="typed"></span></p>
+            </div>
+            <div class="header-image">
+                <img src="path/to/your/image.jpg" alt="Domingo Ortega III">
+            </div>
+        </div>
     </header>
-
+    
     <main>
         <section id="about">
             <h2>About Me</h2>
@@ -112,6 +119,23 @@
             </div>
         </section>
 
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <div class="certificates-container">
+                <div class="certificate-card">
+                    <h3>Internship Certificate</h3>
+                    <div class="certificate-preview">
+                        <img src="https://via.placeholder.com/300x200" alt="Certificate Preview">
+                    </div>
+                    <div class="certificate-details">
+                        <p>Certification of completion for the Digital Human Dev Team internship at NTT Data Philippines, Inc.</p>
+                        <a href="path/to/your/internship_certificate.pdf" class="certificate-link" target="_blank">View Certificate (PDF)</a>
+                    </div>
+                </div>
+                <!-- You can add more certificate cards here if needed -->
+            </div>
+        </section>
+
         <section id="projects">
             <h2>My Projects</h2>
             <div class="project-grid">
@@ -167,13 +191,23 @@
         </section>
 
         
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Github: <a href="https://github.com/domort3">Github</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/domingo-ortega-8b108a2ba/">LinkedIn</a></p>
-            <p>E-mail address: <a href="domingoortegaiii@gmail.com">Gmail</a></p>
-        </section>
+       <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+        <a href="https://github.com/domort3" class="contact-card" target="_blank">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/domingo-ortega-8b108a2ba/" class="contact-card" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="mailto:domingoortegaiii@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+        </a>
+    </div>
+</section>
     </main>
 
     <footer>
