@@ -1,0 +1,114 @@
+---
+const skills = [
+  {
+    category: "Programming Languages",
+    items: ["Python", "JavaScript", "C#", "Kotlin"]
+  },
+  {
+    category: "Frameworks",
+    items: ["Django", "ASP.NET"]
+  },
+  {
+    category: "Technical Experience",
+    items: ["Web Development", "Game Development", "Mobile Development", "Machine Learning", "Workflow Automation", "Software Engineering"]
+  },
+  {
+    category: "Tools & Platforms",
+    items: ["IBM WatsonX", "n8n", "Hasura", "OpenWebUI", "Supabase", "HubSpot Pages", "Hostinger", "Jira", "Confluence", "Asana", "Clari Copilot"]
+  },
+  {
+    category: "Database Systems",
+    items: ["MS SQL", "MySQL", "SQLite", "PostgreSQL", "GraphQL"]
+  }
+];
+---
+
+<section id="skills" class="py-20 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+          Skills & Technologies
+        </span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mb-8"></div>
+      <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+        A comprehensive overview of my technical skills across various domains
+      </p>
+    </div>
+    
+    <div class="relative overflow-hidden">
+      <div id="skills-carousel" class="flex transition-transform duration-500 ease-in-out">
+        {skills.map((skill, index) => (
+          <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3">
+            <div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 h-full">
+              <h3 class="text-lg font-bold mb-3 text-indigo-400">{skill.category}</h3>
+              <div class="flex flex-wrap gap-2">
+                {skill.items.map(item => (
+                  <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <div class="flex justify-center space-x-2 mt-6">
+        {skills.map((_, index) => (
+          <div 
+            class={`w-2 h-2 rounded-full transition-all duration-300 ${index === 0 ? 'bg-indigo-500' : 'bg-gray-600'}`}
+            data-slide={index}
+          ></div>
+        ))}
+      </div>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+      const totalSlides = document.querySelectorAll('[data-slide]').length;
+      const carousel = document.getElementById('skills-carousel');
+      const dots = document.querySelectorAll('[data-slide]');
+      
+      function updateCarousel() {
+        const itemsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+        const maxSlide = Math.max(0, totalSlides - itemsPerView);
+        
+        // Loop back to start if we've reached the end
+        if (currentSlide > maxSlide) {
+          currentSlide = 0;
+        }
+        
+        const slideWidth = 100 / itemsPerView;
+        carousel.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+        
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('bg-indigo-500', index === currentSlide);
+          dot.classList.toggle('bg-gray-600', index !== currentSlide);
+        });
+      }
+      
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          updateCarousel();
+        });
+      });
+      
+      // Auto-advance carousel with looping
+      setInterval(() => {
+        const itemsPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+        const maxSlide = Math.max(0, totalSlides - itemsPerView);
+        
+        currentSlide = currentSlide >= maxSlide ? 0 : currentSlide + 1;
+        updateCarousel();
+      }, 4000);
+      
+      // Handle window resize
+      window.addEventListener('resize', updateCarousel);
+      
+      updateCarousel();
+    </script>
+  </div>
+</section>

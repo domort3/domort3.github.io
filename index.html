@@ -1,290 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domingo Ortega III - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Add Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- Animate on Scroll-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">AOS.init();</script>
-<!--  Lightbox-->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-</head>
-<body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#skillset"><i class="fas fa-tools"></i> Skillset</a></li>
-            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-            <li><a href="#internship"><i class="fas fa-briefcase"></i> Internship</a></li>
-            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-    </nav>
-
-    <header id="home">
-        <div class="header-content">
-            <div class="header-text">
-                <p class="header-greeting">Hi, my name is</p>
-                <h1>Domingo Ortega III</h1>
-                <p class="header-profession"><span id="typed"></span></p>
-            </div>
-            <div class="header-image">
-                <img src="images/ortega.jpg" alt="Domingo Ortega III">
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                My name is Domingo J. Ortega III. An aspiring software engineer currently enrolled at Mapua Malayan Colleges Laguna in Computer Science. <br>
-                Most of my interests in the field of computer science are: Machine Learning / AI, Game Development, Data Science, Back-end Development<br>
-                My background in programming stems from an interest in computers from a young age, which made me intereseted in pursuing a career in software development<br>
-            </p>
-            <div class="cv-button-container">
-                <a href=images/certificates/CV_Ortega.pdf class="cv-button" target="_blank">
-                    <i class="fas fa-file-pdf"></i> View My CV
-                </a>
-        </section>
-        <section id="skillset">
-            <h2>My Skillset</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Experience in</h3>
-                    <ul>
-                        <li><i class="fas fa-globe"></i> Web Development</li>
-                        <li><i class="fas fa-mobile-alt"></i> Mobile Development</li>
-                        <li><i class="fas fa-brain"></i> Machine Learning</li>
-                        <li><i class="fas fa-gamepad"></i> Game Development</li>
-                        <li><i class="fas fa-database"></i> Database Management</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li><i class="fab fa-html5"></i> HTML</li>
-                        <li><i class="fab fa-cuttlefish"></i> C#</li>
-                        <li><i class="fab fa-python"></i> Python</li>
-                        <li><i class="fab fa-js-square"></i> JavaScript</li>
-                        <li><i class="fab fa-android"></i> Kotlin</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Database Management Tools</h3>
-                    <ul>
-                        <li><i class="fas fa-database"></i> SQL</li>
-                        <li><i class="fas fa-database"></i> MySQL</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <section id="experience">
-            <h2>My Experience</h2>
-            <div class="experience-container">
-                <div class="experience-item">
-                    <h3>Membership Committee Chair</h3>
-                    <p class="company">Mapua MCL-ACM Student Chapter</p>
-                    <p class="date">August 2022 - May 2023</p>
-                    <ul>
-                        <li>Assisted in with other officers in handling documentation and events</li>
-                        <li>Helped conduct events within the organization such as general assemblies</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Digital Human Dev Team Intern</h3>
-                    <p class="company">NTT Data Philippines, Inc.</p>
-                    <p class="date">May 2024 - July 2024</p>
-                    <ul>
-                        <li>Assisted in developing AI projects for the dev team</li>
-                        <li>Helped with development and testing of AI products</li>
-                        <li>Hands-on experience with development using IBM watsonx</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-
-        <section id="internship">
-            <h2>My Internship</h2>
-            <div class="internship-summary">
-                <p>I completed an internship as part of the Digital Human Dev Team, where I gained valuable experience in software development with implementing AI as well as
-                    project management and QA testing.
-                     The internship lasted from May 2024 - July 2024</p>
-                     <a href="practicum.html" class="button">View Full Internship Details <i class="fas fa-chevron-right"></i></a>
-                    </div>
-        </section>
-
-        <section id="certificates">
-            <h2>Certificates</h2>
-            <div class="certificates-container">
-                <div class="certificate-card">
-                    <h3>Certificate of Completion</h3>
-                    <div class="certificate-preview">
-                        <img src="images/certificates/coc_screenshot.jpg" alt="Certificate Preview">
-                    </div>
-                    <div class="certificate-details">
-                        <p>Certification of completion for the Digital Human Dev Team internship at NTT Data Philippines, Inc.</p>
-                        <a href="images/certificates/COC_Ortega.pdf" class="certificate-link" target="_blank">View Certificate (PDF) <i class="fas fa-file-pdf"></i></a>
-                    </div>
-                </div>
-                <div class="certificate-card">
-                    <h3>Fortinet network Security Associate Certificate</h3>
-                    <div class="certificate-preview">
-                        <img src=images/certificates/fortinet-img.png alt="Certificate Preview">
-                    </div>
-                    <div class="certificate-details">
-                        <p>Certificate for Fortinet Network Security Basics</p>
-                     
-                    </div>
-                </div>
-                <!-- You can add more certificate cards here if needed -->
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src=images/cocoscan-logo.png alt="Project 1">
-                    <div class="content">
-                        <h3>CocoScan App</h3>
-                        <p>Mobile Application developed with Android Native that uses YOLO to detect the presence and maturity level of coconuts through
-                            real-time detection
-                        </p>
-                        <div class="project-details">
-                            <p>Mostly worked on the back-end development of the application and model development, with some assistance on fixing the front-end design</p>
-                            <ul>
-                                <li>Android Native through Kotlin</li>
-                                <li>YOLOv8 through TensorFlow Lite</li>
-                                <li>Previous prototypes used NCNN and React Native</li>
-                            </ul>
-                            <a href="https://github.com/domort3/Thesis-CS202309" class="project-link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src=images/pixel-tower_logo.jpg alt="Project 2">
-                    <div class="content">
-                        <h3>Pixel Tower</h3>
-                        <p>Game Development Project using Unity which is a platformer that keeps track of scores done by users with game mechanics that help with replayability.</p>
-                        <div class="project-details">
-                            <p>Mostly worked on the game logic & overall mechanics. Was made as the final project for Game Dev course </p>
-                            <ul>
-                                <li>Unity </li>
-                                <li>Game Development</li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src=images/WebDev-image.png alt="Project 3">
-                    <div class="content">
-                        <h3>Sidhomes</h3>
-                        <p>Web dev project that shows a furtiture ordering system using ASP to handle the website's functionality.</p>
-                        <div class="project-details">
-                            <p>worked mainly on back-end and overall database management system</p>
-                            <ul>
-                                <li>ASP.NET</li>
-                                <li>SQL</li>
-                                <li>Web Development</li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-       <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-container">
-        <a href="https://github.com/domort3" class="contact-card" target="_blank">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/domingo-ortega-8b108a2ba/" class="contact-card" target="_blank">
-            <i class="fab fa-linkedin"></i>
-            <span>LinkedIn</span>
-        </a>
-        <a href="mailto:domingoortegaiii@gmail.com" class="contact-card">
-            <i class="fas fa-envelope"></i>
-            <span>Email</span>
-        </a>
-    </div>
-</section>
-    </main>
-
-    <footer>
-        <p>Portfolio</p>
-    </footer>
-
-    <script>
-        // Navbar hide on scroll
-        let prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            let currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").classList.remove("hidden");
-            } else {
-                document.getElementById("navbar").classList.add("hidden");
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    
-        // Smooth section reveal
-        const sections = document.querySelectorAll('section');
-        const revealSection = (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        };
-        const sectionObserver = new IntersectionObserver(revealSection, {
-            root: null,
-            threshold: 0.15,
-        });
-        sections.forEach(section => {
-            sectionObserver.observe(section);
-        });
-    
-        // Project card expansion
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('click', () => {
-                card.classList.toggle('expanded');
-            });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed('#typed', {
-            strings: ['Aspiring Software Engineer', 'Computer Science Student', 'Back-end Developer'],
-            typeSpeed: 50,
-            backSpeed: 90,
-            loop: true
-        });
-    </script>
-    <script>
-        particlesJS.load('particles-js', 'path/to/particlesjs-config.json', function() {
-            console.log('particles.js loaded - callback');
-        });
-    </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/svg+xml" href="favicon.svg"><meta name="generator" content="Astro v5.12.8"><meta name="description" content="Domingo Ortega III - Computer Science student portfolio showcasing skills in AI/ML, Game Development, Data Science, and Backend Development"><meta name="author" content="Domingo Ortega III"><meta property="og:title" content="Domingo Ortega III - Portfolio"><meta property="og:description" content="Computer Science student at Mapua Malayan Colleges Laguna specializing in AI/ML, Game Development, and Backend Development"><meta property="og:type" content="website"><title>Domingo Ortega III - Portfolio</title><link rel="stylesheet" href="_astro/index.stOVhAWB.css"></head> <body class="bg-gray-900 text-white font-sans">  <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="flex justify-center items-center h-16"> <div class="flex items-baseline space-x-8"> <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-gray-800/50"> Home </a><a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-gray-800/50"> About </a><a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-gray-800/50"> Skills </a><a href="#experience" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-gray-800/50"> Experience </a><a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-gray-800/50"> Projects </a><a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-gray-800/50"> Contact </a> </div> <div class="md:hidden"> <button class="text-gray-300 hover:text-white p-2"> <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button> </div> </div> </div> </nav> <main> <section id="home" class="pt-20 pb-16 relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-900" data-astro-cid-bbe6dxrz> <div class="absolute inset-0 bg-grid-pattern opacity-10" data-astro-cid-bbe6dxrz></div> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-astro-cid-bbe6dxrz> <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center" data-astro-cid-bbe6dxrz> <div class="lg:col-span-2 text-center lg:text-left" data-astro-cid-bbe6dxrz> <h1 class="text-4xl md:text-6xl font-bold mb-8 leading-tight" data-astro-cid-bbe6dxrz> <span class="block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent" data-astro-cid-bbe6dxrz>
+Domingo Ortega III
+</span> </h1> <p class="text-lg md:text-xl text-gray-300 mb-4" data-astro-cid-bbe6dxrz> <span id="typed-text" data-astro-cid-bbe6dxrz>Associate Developer</span> <span class="cursor" data-astro-cid-bbe6dxrz>|</span> </p> <p class="text-sm text-gray-400 mb-6 max-w-2xl" data-astro-cid-bbe6dxrz>
+Computer Science Graduate specializing in AI Integration, Workflow Automation, and Machine Learning. Currently developing cutting-edge solutions at Playbook Sports.
+</p> <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start" data-astro-cid-bbe6dxrz> <button id="view-projects-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 text-sm" data-astro-cid-bbe6dxrz>
+View Projects
+</button> <button id="get-in-touch-btn" class="border border-indigo-600 text-indigo-400 hover:bg-indigo-600 hover:text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 text-sm" data-astro-cid-bbe6dxrz>
+Get In Touch
+</button> </div> </div> <div class="relative" data-astro-cid-bbe6dxrz> <div class="relative w-48 h-48 mx-auto" data-astro-cid-bbe6dxrz> <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur-2xl opacity-30" data-astro-cid-bbe6dxrz></div> <div class="relative bg-gray-800 rounded-full p-1" data-astro-cid-bbe6dxrz> <img src="images/ortega.jpg" alt="Domingo Ortega III" class="rounded-full w-full h-full object-cover border-2 border-indigo-500/50" data-astro-cid-bbe6dxrz> </div> </div> </div> </div> </div> </section>  <script type="module">const i=["Software Engineer","AI Specialist","Full Stack Developer","CS Graduate"];let l=0,e=0,t=!1;function s(){const c=document.getElementById("typed-text"),o=i[l];t?(c.textContent=o.substring(0,e-1),e--):(c.textContent=o.substring(0,e+1),e++);let n=100;t&&(n/=2),!t&&e===o.length?(n=2e3,t=!0):t&&e===0&&(t=!1,l=(l+1)%i.length,n=500),setTimeout(s,n)}document.addEventListener("DOMContentLoaded",()=>{setTimeout(s,1e3),document.getElementById("view-projects-btn")?.addEventListener("click",()=>{document.getElementById("projects")?.scrollIntoView({behavior:"smooth"})}),document.getElementById("get-in-touch-btn")?.addEventListener("click",()=>{document.getElementById("contact")?.scrollIntoView({behavior:"smooth"})})});</script>  <section id="about" class="py-12 bg-gray-800/50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-8"> <h2 class="text-3xl md:text-4xl font-bold mb-4"> <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+About Me
+</span> </h2> <div class="w-24 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mb-4"></div> </div> <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start"> <div class="lg:col-span-2"> <h3 class="text-xl font-bold mb-4 text-indigo-400">Hello, I'm Domingo</h3> <p class="text-gray-300 mb-4 text-sm leading-relaxed">
+Computer Science graduate from <span class="text-indigo-400 font-semibold">Mapua Malayan Colleges Laguna</span> (2020-2024), 
+          recognized as a Dean's Lister. Currently working as an Associate Developer at Playbook Sports, specializing in workflow automation and AI integration.
+</p> <div class="flex flex-wrap gap-2 mb-4"> <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-xs font-medium">
+Workflow Automation
+</span> <span class="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-xs font-medium">
+Machine Learning
+</span> <span class="bg-pink-600/20 text-pink-300 px-3 py-1 rounded-full text-xs font-medium">
+Web Development
+</span> <span class="bg-green-600/20 text-green-300 px-3 py-1 rounded-full text-xs font-medium">
+Mobile Development
+</span> </div> <p class="text-gray-400 text-sm leading-relaxed">
+I specialize in creating AI-powered solutions and workflow automation systems. My experience 
+          includes developing chatbots, integrating cutting-edge AI models, and building applications 
+          that streamline business processes.
+</p> </div> <div class="bg-gray-800 rounded-xl p-6 border border-gray-700"> <h4 class="text-lg font-bold mb-4 text-center text-indigo-400">Quick Stats</h4> <div class="space-y-3"> <div class="flex justify-between items-center"> <span class="text-gray-400 text-sm">Degree</span> <span class="text-indigo-400 font-semibold text-sm">BS Computer Science</span> </div> <div class="flex justify-between items-center"> <span class="text-gray-400 text-sm">Graduated</span> <span class="text-indigo-400 font-semibold text-sm">2024</span> </div> <div class="flex justify-between items-center"> <span class="text-gray-400 text-sm">Current Role</span> <span class="text-indigo-400 font-semibold text-sm">Associate Developer</span> </div> <div class="flex justify-between items-center"> <span class="text-gray-400 text-sm">Specialization</span> <span class="text-indigo-400 font-semibold text-sm">AI & Automation</span> </div> </div> </div> </div> </div> </section> <section id="skills" class="py-20 bg-gray-900"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-16"> <h2 class="text-4xl md:text-5xl font-bold mb-4"> <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+Skills & Technologies
+</span> </h2> <div class="w-24 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mb-8"></div> <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+A comprehensive overview of my technical skills across various domains
+</p> </div> <div class="relative overflow-hidden"> <div id="skills-carousel" class="flex transition-transform duration-500 ease-in-out"> <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"> <div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 h-full"> <h3 class="text-lg font-bold mb-3 text-indigo-400">Programming Languages</h3> <div class="flex flex-wrap gap-2"> <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Python </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> JavaScript </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> C# </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Kotlin </span> </div> </div> </div><div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"> <div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 h-full"> <h3 class="text-lg font-bold mb-3 text-indigo-400">Frameworks</h3> <div class="flex flex-wrap gap-2"> <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Django </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> ASP.NET </span> </div> </div> </div><div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"> <div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 h-full"> <h3 class="text-lg font-bold mb-3 text-indigo-400">Technical Experience</h3> <div class="flex flex-wrap gap-2"> <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Web Development </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Game Development </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Mobile Development </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Machine Learning </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Workflow Automation </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Software Engineering </span> </div> </div> </div><div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"> <div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 h-full"> <h3 class="text-lg font-bold mb-3 text-indigo-400">Tools &amp; Platforms</h3> <div class="flex flex-wrap gap-2"> <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> IBM WatsonX </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> n8n </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Hasura </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> OpenWebUI </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Supabase </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> HubSpot Pages </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Hostinger </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Jira </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Confluence </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Asana </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> Clari Copilot </span> </div> </div> </div><div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-3"> <div class="bg-gray-800 rounded-xl p-5 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 h-full"> <h3 class="text-lg font-bold mb-3 text-indigo-400">Database Systems</h3> <div class="flex flex-wrap gap-2"> <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> MS SQL </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> MySQL </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> SQLite </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> PostgreSQL </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs hover:bg-indigo-600/20 hover:text-indigo-300 transition-all duration-200"> GraphQL </span> </div> </div> </div> </div> <div class="flex justify-center space-x-2 mt-6"> <div class="w-2 h-2 rounded-full transition-all duration-300 bg-indigo-500" data-slide="0"></div><div class="w-2 h-2 rounded-full transition-all duration-300 bg-gray-600" data-slide="1"></div><div class="w-2 h-2 rounded-full transition-all duration-300 bg-gray-600" data-slide="2"></div><div class="w-2 h-2 rounded-full transition-all duration-300 bg-gray-600" data-slide="3"></div><div class="w-2 h-2 rounded-full transition-all duration-300 bg-gray-600" data-slide="4"></div> </div> </div> <script type="module">let e=0;const o=document.querySelectorAll("[data-slide]").length,r=document.getElementById("skills-carousel"),d=document.querySelectorAll("[data-slide]");function i(){const t=window.innerWidth>=1024?3:window.innerWidth>=768?2:1,n=Math.max(0,o-t);e>n&&(e=0);const a=100/t;r.style.transform=`translateX(-${e*a}%)`,d.forEach((s,l)=>{s.classList.toggle("bg-indigo-500",l===e),s.classList.toggle("bg-gray-600",l!==e)})}d.forEach((t,n)=>{t.addEventListener("click",()=>{e=n,i()})});setInterval(()=>{const t=window.innerWidth>=1024?3:window.innerWidth>=768?2:1,n=Math.max(0,o-t);e=e>=n?0:e+1,i()},4e3);window.addEventListener("resize",i);i();</script> </div> </section> <section id="experience" class="py-20 bg-gray-800/50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-16"> <h2 class="text-4xl md:text-5xl font-bold mb-4"> <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+Experience
+</span> </h2> <div class="w-24 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mb-8"></div> </div> <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto"> <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300"> <div class="flex justify-between items-start mb-4"> <div class="flex-1"> <h3 class="text-xl font-bold text-indigo-400 mb-1">Associate Developer</h3> <p class="text-lg text-gray-300 mb-1">Playbook Sports</p> <p class="text-sm text-gray-400 mb-2">Hoboken, NJ (Remote)</p> </div> <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap ml-4"> December 2024 - Present </span> </div> <p class="text-gray-300 mb-4 text-sm leading-relaxed">Key developer utilizing n8n for workflow automation and middleware solutions, enabling swift integration and deployment of AI-powered applications.</p> <div> <h4 class="text-sm font-semibold mb-2 text-indigo-400">Key Highlights:</h4> <div class="space-y-1"> <div class="flex items-start"> <span class="text-indigo-400 mr-2 text-xs mt-1">▸</span> <span class="text-gray-300 text-xs leading-relaxed">Acted as a key developer in utilizing n8n for workflow automation and middleware solutions, enabling swift integration and deployment of applications powered by cutting-edge AI like ChatGPT, Gemini, and Claude</span> </div><div class="flex items-start"> <span class="text-indigo-400 mr-2 text-xs mt-1">▸</span> <span class="text-gray-300 text-xs leading-relaxed">Innovated data analysis processes by embedding prompt engineering within n8n workflows, leading to more effective analysis of transcripts for strategic insights into product improvement as well as highlighting customer frustrations and requests</span> </div><div class="flex items-start"> <span class="text-indigo-400 mr-2 text-xs mt-1">▸</span> <span class="text-gray-300 text-xs leading-relaxed">Designed and built multiple web applications with integrated AI capabilities to automate the generation of essential business content, including job descriptions and promotional materials</span> </div> </div> </div> </div><div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300"> <div class="flex justify-between items-start mb-4"> <div class="flex-1"> <h3 class="text-xl font-bold text-indigo-400 mb-1">Chatbot Intern</h3> <p class="text-lg text-gray-300 mb-1">NTT Data Philippines</p> <p class="text-sm text-gray-400 mb-2">Makati, Manila (Remote)</p> </div> <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap ml-4"> May 2024 - July 2024 </span> </div> <p class="text-gray-300 mb-4 text-sm leading-relaxed">Contributed to the end-to-end development lifecycle of multiple client-facing chatbots, from initial design to deployment.</p> <div> <h4 class="text-sm font-semibold mb-2 text-indigo-400">Key Highlights:</h4> <div class="space-y-1"> <div class="flex items-start"> <span class="text-indigo-400 mr-2 text-xs mt-1">▸</span> <span class="text-gray-300 text-xs leading-relaxed">Contributed to the end-to-end development lifecycle of multiple client-facing chatbots, from initial design to deployment</span> </div><div class="flex items-start"> <span class="text-indigo-400 mr-2 text-xs mt-1">▸</span> <span class="text-gray-300 text-xs leading-relaxed">Utilized the IBM WatsonX platform to develop sophisticated chatbot functionalities, including intent recognition and dialogue management, to meet client specifications</span> </div><div class="flex items-start"> <span class="text-indigo-400 mr-2 text-xs mt-1">▸</span> <span class="text-gray-300 text-xs leading-relaxed">Performed critical pre-presentation testing and validation to guarantee high-quality deliverables and support successful client engagement</span> </div> </div> </div> </div> </div> </div> </section> <section id="projects" class="py-20 bg-gray-900"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-16"> <h2 class="text-4xl md:text-5xl font-bold mb-4"> <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+Featured Projects
+</span> </h2> <div class="w-24 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mb-8"></div> <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+A showcase of my recent work across different domains and technologies
+</p> </div> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 group"> <div class="aspect-video overflow-hidden"> <img src="images/cocoscan-logo.png" alt="CocoScan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"> </div> <div class="p-6"> <div class="flex items-center justify-between mb-3"> <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-xs font-medium"> AI/ML </span> </div> <h3 class="text-xl font-bold mb-3 text-white">CocoScan</h3> <p class="text-gray-400 mb-4 text-sm leading-relaxed">Mobile application for coconut maturity detection using YOLO machine learning model with real-time detection capabilities.</p> <div class="flex flex-wrap gap-2 mb-4"> <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> Android Native </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> Kotlin </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> YOLOv8 </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> TensorFlow Lite </span> </div> <div class="flex justify-center"> <a href="https://github.com/domort3/Thesis-CS202309" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors duration-200 text-center">
+View Project
+</a> </div> </div> </div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 group"> <div class="aspect-video overflow-hidden"> <img src="images/pixel-tower_logo.jpg" alt="Pixel Tower" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"> </div> <div class="p-6"> <div class="flex items-center justify-between mb-3"> <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-xs font-medium"> Game Development </span> </div> <h3 class="text-xl font-bold mb-3 text-white">Pixel Tower</h3> <p class="text-gray-400 mb-4 text-sm leading-relaxed">A challenging 2D platformer game featuring pixel art graphics, precise controls, and engaging level design.</p> <div class="flex flex-wrap gap-2 mb-4"> <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> Unity </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> C# </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> Game Design </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> Pixel Art </span> </div>  </div> </div><div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 group"> <div class="aspect-video overflow-hidden"> <img src="images/WebDev-image.png" alt="SIDHomes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"> </div> <div class="p-6"> <div class="flex items-center justify-between mb-3"> <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-xs font-medium"> Web Development </span> </div> <h3 class="text-xl font-bold mb-3 text-white">SIDHomes</h3> <p class="text-gray-400 mb-4 text-sm leading-relaxed">A modern web application for real estate management with responsive design and user-friendly interface.</p> <div class="flex flex-wrap gap-2 mb-4"> <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> HTML </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> CSS </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> JavaScript </span><span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs"> Responsive Design </span> </div>  </div> </div> </div> </div> </section> <footer id="contact" class="bg-gray-900 border-t border-gray-800 py-12"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-8"> <h2 class="text-3xl font-bold mb-4"> <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+Get In Touch
+</span> </h2> <p class="text-gray-400 max-w-2xl mx-auto">
+Let's connect and discuss opportunities, projects, or the latest in AI and software development.
+</p> </div> <div class="flex justify-center space-x-8 mb-8"> <a href="https://github.com/domort3" target="_blank" class="flex flex-col items-center p-4 rounded-lg transition-all duration-300 group text-gray-400 hover:text-white"> <svg class="w-8 h-8 mb-2" fill="currentColor" viewBox="0 0 24 24"> <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path> </svg> <span class="text-sm font-medium">GitHub</span> </a><a href="https://www.linkedin.com/in/domingo-ortega-8b108a2ba" target="_blank" class="flex flex-col items-center p-4 rounded-lg transition-all duration-300 group text-blue-400 hover:text-blue-300"> <svg class="w-8 h-8 mb-2" fill="currentColor" viewBox="0 0 24 24"> <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path> </svg> <span class="text-sm font-medium">LinkedIn</span> </a><a href="mailto:domingoortegaiii@gmail.com" target="_blank" class="flex flex-col items-center p-4 rounded-lg transition-all duration-300 group text-red-400 hover:text-red-300"> <svg class="w-8 h-8 mb-2" fill="currentColor" viewBox="0 0 24 24"> <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819L11.18 14.71c-.316-.316-.816-.316-1.132 0L2.455 21.002H1.636C.732 21.002 0 20.27 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h20.728C23.268 3.821 24 4.553 24 5.457zm-1.636 1.636L12 14.457 1.636 7.093v-.001L12 .729l10.364 6.364z"></path> </svg> <span class="text-sm font-medium">Email</span> </a> </div> <div class="text-center"> <p class="text-gray-400 text-sm">
+© 2024 Domingo Ortega III. Built with Astro & Tailwind CSS.
+</p> </div> </div> </footer> </main>  </body></html>

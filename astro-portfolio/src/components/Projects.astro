@@ -1,0 +1,91 @@
+---
+const projects = [
+  {
+    title: "CocoScan",
+    description: "Mobile application for coconut maturity detection using YOLO machine learning model with real-time detection capabilities.",
+    technologies: ["Android Native", "Kotlin", "YOLOv8", "TensorFlow Lite"],
+    image: "/images/cocoscan-logo.png",
+    github: "https://github.com/domort3/cocoscan",
+    demo: "https://github.com/domort3/Thesis-CS202309",
+    category: "AI/ML"
+  },
+  {
+    title: "Pixel Tower",
+    description: "A challenging 2D platformer game featuring pixel art graphics, precise controls, and engaging level design.",
+    technologies: ["Unity", "C#", "Game Design", "Pixel Art"],
+    image: "/images/pixel-tower_logo.jpg",
+    github: "https://github.com/domort3/pixel-tower",
+    demo: "#",
+    category: "Game Development"
+  },
+  {
+    title: "SIDHomes",
+    description: "A modern web application for real estate management with responsive design and user-friendly interface.",
+    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    image: "/images/WebDev-image.png",
+    github: "https://github.com/domort3/sidhomes",
+    demo: "#",
+    category: "Web Development"
+  }
+];
+---
+
+<section id="projects" class="py-20 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+          Featured Projects
+        </span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mb-8"></div>
+      <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+        A showcase of my recent work across different domains and technologies
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map(project => (
+        <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500/50 transition-all duration-300 group">
+          <div class="aspect-video overflow-hidden">
+            <img 
+              src={project.image} 
+              alt={project.title}
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-xs font-medium">
+                {project.category}
+              </span>
+            </div>
+            
+            <h3 class="text-xl font-bold mb-3 text-white">{project.title}</h3>
+            <p class="text-gray-400 mb-4 text-sm leading-relaxed">{project.description}</p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              {project.technologies.map(tech => (
+                <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            
+            {project.demo !== "#" && (
+              <div class="flex justify-center">
+                <a 
+                  href={project.demo} 
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors duration-200 text-center"
+                >
+                  View Project
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,126 @@
+---
+---
+
+<section id="home" class="pt-20 pb-16 relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-900">
+  <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+      <div class="lg:col-span-2 text-center lg:text-left">
+        <h1 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+          <span class="block bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            Domingo Ortega III
+          </span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-gray-300 mb-4">
+          <span id="typed-text">Associate Developer</span>
+          <span class="cursor">|</span>
+        </p>
+        
+        <p class="text-sm text-gray-400 mb-6 max-w-2xl">
+          Computer Science Graduate specializing in AI Integration, Workflow Automation, and Machine Learning. Currently developing cutting-edge solutions at Playbook Sports.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+          <button 
+            id="view-projects-btn"
+            class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 text-sm"
+          >
+            View Projects
+          </button>
+          <button 
+            id="get-in-touch-btn"
+            class="border border-indigo-600 text-indigo-400 hover:bg-indigo-600 hover:text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 text-sm"
+          >
+            Get In Touch
+          </button>
+        </div>
+      </div>
+      
+      <div class="relative">
+        <div class="relative w-48 h-48 mx-auto">
+          <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur-2xl opacity-30"></div>
+          <div class="relative bg-gray-800 rounded-full p-1">
+            <img 
+              src="/images/ortega.jpg" 
+              alt="Domingo Ortega III"
+              class="rounded-full w-full h-full object-cover border-2 border-indigo-500/50"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bg-grid-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  .typed-text {
+    border-right: 2px solid #6366f1;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: #6366f1; }
+  }
+</style>
+
+<script>
+  // Typing effect
+  const titles = ["Software Engineer", "AI Specialist", "Full Stack Developer", "CS Graduate"];
+  let currentTitle = 0;
+  let currentChar = 0;
+  let isDeleting = false;
+  
+  function typeEffect() {
+    const typedElement = document.getElementById('typed-text');
+    const current = titles[currentTitle];
+    
+    if (isDeleting) {
+      typedElement.textContent = current.substring(0, currentChar - 1);
+      currentChar--;
+    } else {
+      typedElement.textContent = current.substring(0, currentChar + 1);
+      currentChar++;
+    }
+    
+    let typeSpeed = 100;
+    
+    if (isDeleting) {
+      typeSpeed /= 2;
+    }
+    
+    if (!isDeleting && currentChar === current.length) {
+      typeSpeed = 2000;
+      isDeleting = true;
+    } else if (isDeleting && currentChar === 0) {
+      isDeleting = false;
+      currentTitle = (currentTitle + 1) % titles.length;
+      typeSpeed = 500;
+    }
+    
+    setTimeout(typeEffect, typeSpeed);
+  }
+  
+  // Button functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    // Start typing effect
+    setTimeout(typeEffect, 1000);
+    
+    // Button event listeners
+    document.getElementById('view-projects-btn')?.addEventListener('click', () => {
+      document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'});
+    });
+    
+    document.getElementById('get-in-touch-btn')?.addEventListener('click', () => {
+      document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
+    });
+  });
+</script>
+</style>
